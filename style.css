@@ -1,0 +1,365 @@
+/* Estilos globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e1e, #000000);
+    overflow-x: hidden;
+}
+
+/* Animação suave ao rolar a página */
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: 'Creepster', cursive;
+    color: #ff7518;
+    text-shadow: 3px 3px 8px #000;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #ff7518;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* Estilos para o Header */
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/hd/1920-x-1080-halloween-yvpszcfu340l71el.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.header-content {
+    z-index: 2;
+    animation: fadeIn 2s ease-out;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background-color: #ff7518;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeitos de Hover nos Botões */
+.btn:hover {
+    background-color: #ff914d;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 117, 24, 0.7);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/* Informações do Evento */
+.info {
+    padding: 50px 20px;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info-card {
+    background: #282828;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%; /* Mantendo a largura como 30% */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.info-icon {
+    font-size: 2rem;
+    color: #ff7518;
+    margin-bottom: 10px;
+}
+
+/* Animações nos Ícones */
+.info-icon:hover, .food-icon:hover {
+    transform: scale(1.2);
+    animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+/* Seções de Alimentos */
+.food-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.food-item {
+    background: #282828;
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.food-icon {
+    font-size: 2.5rem;
+    color: #ff7518;
+}
+
+.entertainment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.entertainment-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #282828;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    position: relative;
+}
+
+.entertainment-list li:hover {
+    background: #ff914d;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.details-hidden {
+    display: none;
+}
+
+/* Ingressos */
+.ingresso-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pix-option, .dinheiro-option {
+    background: #282828;
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Feedback Visual nas Opções de Pagamento */
+.pix-option:hover, .dinheiro-option:hover {
+    box-shadow: 0 0 15px rgba(255, 117, 24, 0.7);
+    transform: translateY(-5px);
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebd5a;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #ff7518;
+    font-size: 2rem;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+/* Botão Flutuante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebd5a;
+    transform: scale(1.1);
+}
+
+/* Timer de Contagem Regressiva */
+#countdown {
+    font-family: 'Creepster', cursive;
+    color: #ff7518;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Animação de Fade-in ao Rolagem */
+.animated-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animated-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animações */
+.animated {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade Adicional */
+@media (max-width: 360px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+    .header-content p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #countdown {
+        font-size: 1.5rem; /* Diminuir ainda mais em telas menores */
+        padding: 8px 15px; /* Reduzir o padding */
+    }
+}

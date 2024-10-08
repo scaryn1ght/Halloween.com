@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Scary Night</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Adicionando Font Awesome -->
+</head>
+<body>
+    <header>
+        <div class="header-content animated">
+            <h1>Scary Night Halloween</h1>
+            <p>Uma noite de arrepiar! Dia 25/10, Sexta-feira.</p>
+    
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <main>
+        <section id="info" class="info">
+            <h2 class="section-title">Informações do Evento</h2>
+            <div class="details animated">
+                <div class="info-card">
+                    <i class="fas fa-calendar-day info-icon"></i>
+                    <h3>Data e Local</h3>
+                    <p><strong>Data:</strong> 25/10, Sexta-feira, a partir de 19:00</p>
+                    <p><strong>Local:</strong> Chácara do JP</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                    <h3>Local Exato</h3>
+                    <p>Cumbe de cima, localizado na cidade, um pouco antes do Rancho da Ararinha.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-ticket-alt info-icon"></i>
+                    <h3>Ingressos</h3>
+                    <p><strong>Valor:</strong> R$ 15 para mulheres, R$ 20 para homens</p>
+                    <p><strong>Incluso:</strong> Bebidas, sinuca e jogos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="alimentos">
+            <h2 class="section-title">Alimentos e Bebidas</h2>
+            <div class="food-grid animated">
+                <div class="food-item">
+                    <i class="fas fa-candy-cane food-icon"></i>
+                    <h3>Doces</h3>
+                    <p>Doces temáticos de Halloween, incluindo pirulitos, balas e chocolates personalizados.</p>
+                </div>
+                <div class="food-item">
+                    <i class="fas fa-glass-cheers food-icon"></i>
+                    <h3>Bebidas</h3>
+                    <p>Refrigerantes, sucos e algumas opções alcoólicas para maiores de 18 anos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="entretenimento">
+            <h2 class="section-title">Entretenimento</h2>
+            <ul class="entertainment-list">
+                <li>
+                    <span class="toggle"><i class="fas fa-mask"></i><strong> Disputa de Fantasia (Premiação de R$ 50)🏆</strong> <span class="arrow">˅</span></span>
+                    <div id="disputa-de-fantasia-(premiação-de-r$-50)🏆-details" class="details-hidden">
+                        <p>Critérios: Criatividade, detalhamento e caracterização.<br> Não vai ter um certo momento para a apresentação das fantasias, os Jurados vão analisar no meio da festa, discutir e anunciar o vencedor.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="toggle"><i class="fas fa-search"></i><strong> Caça ao Tesouro💎</strong> <span class="arrow">˅</span></span>
+                    <div id="caça-ao-tesouro💎-details" class="details-hidden">
+                        <p>Procure o tesouro escondido pela Chácara.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="toggle"><i class="fas fa-microphone"></i><strong> Karaokê🎤</strong> <span class="arrow">˅</span></span>
+                    <div id="karaokê🎤-details" class="details-hidden">
+                        <p>Venha soltar a voz no nosso Karaokê Assombrado! Mostre seu talento (ou coragem) no palco com seus amigos e escolha suas músicas favoritas para animar a noite de Halloween.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="toggle"><i class="fas fa-beer"></i><strong> Beer pong🥃</strong> <span class="arrow">˅</span></span>
+                    <div id="beer-pong🥃-details" class="details-hidden">
+                        <p>Participe do clássico Beer Pong e desafie seus amigos. Forme duplas e arremesse bolas de pingue-pongue em copos cheios de bebida, enquanto tenta eliminar os copos do time adversário.</p>
+                    </div>
+                </li>
+            </ul>
+            
+        </section>
+         
+        <section id="ingressos" class="ingressos">
+            <h2 class="section-title">Ingressos</h2>
+            <p>Pagamentos via pix até dia 20/10 ou pague no dia com dinheiro físico.</p>
+            <div class="ingresso-options animated">
+                <div class="pix-option">
+                    <i class="fas fa-qrcode info-icon"></i>
+                    <h3>Pagamento via Pix</h3>
+                    <p>Chave Pix: <strong>75999203956</strong></p>
+                    <p>Valor: R$ 15 (mulheres) | R$ 20 (homens)</p>
+                    <p>Envie o comprovante para o WhatsApp <strong>(75) 999203956</strong>.</p>
+                    <img src="QR CODE CONTA.png" alt="QR Code Pix" width="100" height="100">
+                </div>
+                <div class="dinheiro-option">
+                    <i class="fas fa-money-bill-wave info-icon"></i>
+                    <h3>Pagamento no dia</h3>
+                    <p>Se preferir pagar com dinheiro no dia, entre em contato:</p>
+                    <a href="https://wa.me/5575999203956" target="_blank" class="whatsapp-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon"> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timer de Contagem Regressiva -->
+        <section id="countdown-section">
+            <h2 class="section-title">Contagem Regressiva para o Evento</h2>
+            <div id="countdown" class="animated"></div>
+        </section>
+
+        <footer>
+            <p><center>&copy; 2024 Halloween Terceirão</center></p>
+        </footer>
+        
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
