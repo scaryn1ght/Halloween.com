@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Adicionando o botão flutuante de Instagram
     const instagramButton = document.createElement("a");
-    instagramButton.href = "https://www.instagram.com/terceiro_if/";
+    instagramButton.href = "https://www.instagram.com/scarynight_halloweenn/";
     instagramButton.target = "_blank";
     instagramButton.classList.add("instagram-float");
     instagramButton.innerHTML = `
