@@ -424,5 +424,68 @@ header {
 .info-icon:hover {
     transform: scale(1.2);
 }
+footer .visitor-counter {
+    font-size: 0.8rem; /* Texto menor */
+    color: #666; /* Cor discreta */
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e; /* Fundo escuro para não chamar muita atenção */
+}
+   .location-section {
+        background-color: #282828;
+        padding: 40px;
+        text-align: center;
+        color: #f0f0f0;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    }
 
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #ff7518;
+        position: relative;
+    }
+
+    .section-title::after {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background: #ff7518;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .map-container iframe {
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        max-width: 600px;
+        height: 450px;
+    }
+
+    /* Estilo para telas menores (responsividade) */
+    @media (max-width: 768px) {
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .map-container iframe {
+            height: 250px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+    }
 
