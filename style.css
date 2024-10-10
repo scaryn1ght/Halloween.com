@@ -363,3 +363,66 @@ header {
         padding: 8px 15px; /* Reduzir o padding */
     }
 }
+/* Estilos para as opções de ingressos */
+.ingresso-option {
+    background: #282828;
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ingresso-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.ingresso-option h3 {
+    font-size: 1.5rem;
+    color: #ff7518;
+    margin-bottom: 10px;
+}
+
+.ingresso-option p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .ingresso-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ingresso-option {
+        width: 90%; /* Aumenta o espaço em telas menores */
+        margin: 10px 0; /* Adapta o espaçamento vertical */
+    }
+}
+
+@media (max-width: 480px) {
+    .ingresso-option h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho do texto */
+    }
+
+    .ingresso-option p {
+        font-size: 1rem; /* Ajusta o tamanho do preço */
+    }
+}
+.info-icon {
+    font-size: 2rem;
+    color: #ff7518;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Animação ao passar o mouse sobre o ícone */
+.info-icon:hover {
+    transform: scale(1.2);
+}
+
+
